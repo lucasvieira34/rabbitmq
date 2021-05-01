@@ -1,6 +1,6 @@
 package com.lucasvieira.producer.dto;
 
-public class Message {
+public class MessageQueue {
     private String text;
 
     public String getText() {

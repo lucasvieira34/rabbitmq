@@ -1,7 +1,7 @@
 package com.lucasvieira.producer.service;
 
-import com.lucasvieira.producer.dto.Message;
+import com.lucasvieira.producer.dto.MessageQueue;
 
 public interface AmqpService {
-    void sendToConsumer(Message message);
+    void sendToConsumer(MessageQueue message);
 }

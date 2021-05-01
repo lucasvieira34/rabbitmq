@@ -20,7 +20,7 @@ public class ProducerRabbitConfiguration {
     @Value("${spring.rabbitmq.request.exchange.producer}")
     private String exchange;
 
-    @Value("${spring.rabbitmq.request.deadletter.producer}")
+    @Value("${spring.rabbitmq.request.dead-letter.producer}")
     private String deadLetter;
 
     @Bean

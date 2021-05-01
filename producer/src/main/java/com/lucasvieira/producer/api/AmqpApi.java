@@ -1,6 +1,6 @@
 package com.lucasvieira.producer.api;
 
-import com.lucasvieira.producer.dto.Message;
+import com.lucasvieira.producer.dto.MessageQueue;
 import com.lucasvieira.producer.service.AmqpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,7 +17,7 @@ public class AmqpApi {
 
     @ResponseStatus(HttpStatus.ACCEPTED)
     @PostMapping("/send")
-    public void sendToConsumer(@RequestBody Message message) {
+    public void sendToConsumer(@RequestBody MessageQueue message) {
         amqpService.sendToConsumer(message);
     }
 
